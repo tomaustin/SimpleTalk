@@ -1,3 +1,4 @@
+
 SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_NULLS ON
@@ -15,7 +16,7 @@ CREATE PROCEDURE [dbo].[prcAddContact]   @ContactFullName VARCHAR(30),
 										 @Address1 VARCHAR(30) = NULL,
 										 @Address2 VARCHAR(30) = NULL,
 										 @Address3 VARCHAR(30) = NULL,
-										 @Email VARCHAR(30) = NULL,
+										 @Email VARCHAR(3) = NULL,
 										 @JoiningDate DATETIME = NULL
 
 WITH EXECUTE AS CALLER
@@ -48,5 +49,6 @@ VALUES  ( @ContactFullName , -- ContactFullName - nvarchar(100)
         END;
 
 GO
+
 EXEC sp_addextendedproperty N'MS_Description', N'Add a new contact to the Simple Talk community', 'SCHEMA', N'dbo', 'PROCEDURE', N'prcAddContact', NULL, NULL
 GO
