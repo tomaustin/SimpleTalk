@@ -1,3 +1,4 @@
+
 SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_NULLS ON
@@ -9,5 +10,5 @@ CREATE PROCEDURE [dbo].[Get1]
 	--@parameter_name AS scalar_data_type ( = default_value ), ...
 -- WITH ENCRYPTION, RECOMPILE, EXECUTE AS CALLER|SELF|OWNER| 'user_name'
 AS
-	SELECT 1
+	SELECT 2
 GO
