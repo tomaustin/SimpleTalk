@@ -10,5 +10,5 @@ CREATE PROCEDURE [dbo].[Get1]
 	--@parameter_name AS scalar_data_type ( = default_value ), ...
 -- WITH ENCRYPTION, RECOMPILE, EXECUTE AS CALLER|SELF|OWNER| 'user_name'
 AS
-	SELECT 3
+	SELECT 4
 GO
